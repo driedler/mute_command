@@ -18,7 +18,7 @@ def main():
             speaker.mute()
 
     run_shell_cmd(
-        [exe_path, '-m', tflite_path, '--threshold', 150, '--latency', 150],
+        [exe_path, '-m', tflite_path, '--threshold', 150, '--latency', 150, '--volume', 0],
         line_processor=_line_callback
     )
 
